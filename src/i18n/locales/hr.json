@@ -155,7 +155,7 @@
       "filter": {
         "description": {
           	"line1": "Preporučeno: Ostavite prazno ako želite da sve stavke s popisa u vašem trezoru budu zadaci kojima upravlja ovaj plugin.",
-      			"line2": "Koristite globalni filter ako želite da Tasks djeluje samo na podskup vaših "<code>- [ ]</code>" stavki s popisa, tako da stavka s popisa mora uključivati navedeni niz u svom opisu da bi se smatrala zadatkom.",
+      			"line2": "Koristite globalni filter ako želite da Tasks djeluje samo na podskup vaših \"<code>- [ ]</code>\" stavki s popisa, tako da stavka s popisa mora uključivati navedeni niz u svom opisu da bi se smatrala zadatkom.",
       			"line3": "Na primjer, ako postavite globalni filter na <code>#task</code>, Tasks plugin će upravljati samo stavkama s popisa označenim s <code>#task</code>.",
       			"line4": "Ostale stavke s popisa ostat će normalne stavke s popisa i neće se pojavljivati u upitima niti će im biti postavljen datum dovršetka."
         },
