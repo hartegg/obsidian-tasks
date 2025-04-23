@@ -1,0 +1,245 @@
+{
+  "main": {
+    "loadingPlugin": "Učitavanje dodatka: {{name}} v{{version}}",
+    "unloadingPlugin": "Uklanjanje dodatka: {{name}} v{{version}}"
+  },
+  "modals": {
+    "customStatusModal": {
+      "editAvailableAsCommand": {
+        "description": "Ako je omogućeno, ovaj status će biti dostupan kao naredba tako da možete dodijeliti prečac i mijenjati status pomoću njega.",
+		"name": "Dostupno kao naredba"
+      },
+      "editNextStatusSymbol": {
+      "description": "Kada se klikne, ovo je simbol koji će se koristiti sljedeći.",
+	  "name": "Simbol sljedećeg statusa zadatka"
+      },
+      "editStatusName": {
+       "description": "Ovo je prijateljski naziv statusa zadatka.",
+	   "name": "Naziv statusa zadatka"
+      },
+      "editStatusSymbol": {
+       "description": "Ovo je znak između uglatih zagrada. (Može se uređivati samo za prilagođene statuse, a ne za osnovne statuse.)",
+	  "name": "Simbol statusa zadatka"
+      },
+      "editStatusType": {
+       "description": "Upravljanje ponašanjem statusa za pretraživanje i mijenjanje.",
+	   "name": "Vrsta statusa zadatka"
+      },
+      "fixErrorsBeforeSaving": "Ispravite greške prije spremanja."
+    }
+  },
+  "reports": {
+    "statusRegistry": {
+      "about": {
+        "createdBy": "Ovu datoteku je kreirao Obsidian Tasks plugin (verzija {{version}}) kako bi pomogao u vizualizaciji statusa zadataka u ovom trezoru.",
+		"deleteFileAnyTime": "Ovu datoteku možete izbrisati u bilo kojem trenutku.",
+		"title": "O ovoj datoteci",
+        "updateReport": {
+          "line1": "Ako promijenite postavke statusa zadataka, možete dobiti ažurirano izvješće:",
+		"line2": "Idite na Postavke -> Zadaci.",
+		"line3": "Kliknite na Pregledajte i provjerite svoje statuse."
+        }
+      },
+      "columnHeadings": {
+        "nextStatusSymbol": "Simbol sljedećeg statusa",
+		"problems": "Problemi (ako postoje)",
+		"statusName": "Naziv statusa",
+		"statusSymbol": "Simbol statusa",
+		"statusType": "Vrsta statusa"
+      },
+      "loadedSettings": {
+        "settingsActuallyUsed": "Ovo su postavke koje Tasks stvarno koristi.",
+		"switchToLivePreview": "Prebacite se na Live Preview ili Reading Mode da vidite dijagram.",
+		"title": "Učitane postavke"
+      },
+      "messages": {
+        "cannotFindNextStatus": "Neočekivani neuspjeh pronalaska sljedećeg statusa.",
+		"duplicateSymbol": "Dupli simbol '{{symbol}}': ovaj status će biti zanemaren.",
+		"emptySymbol": "Prazan simbol: ovaj status će biti zanemaren.",
+		"nextSymbolUnknown": "Sljedeći simbol {{symbol}} je nepoznat: kreirajte status sa simbolom {{symbol}}.",
+        "notConventionalType": "Za informaciju, konvencionalna vrsta za status simbol {{symbol}} je {{type}}: možda ćete htjeti pregledati ovu vrstu.",
+        "wrongTypeAfterDone": {
+         "line1": "Ovaj DONE status slijedi {{nextType}}, a ne TODO ili IN_PROGRESS.",
+		 "line2": "Ako se koristi za završetak ponavljajućeg zadatka, umjesto toga slijedit će TODO ili IN_PROGRESS, kako bi se osiguralo da sljedeći zadatak odgovara filteru not done.",
+          "line3": "Pogledajte [Ponavljajući zadaci i prilagođeni statusi.]({{helpURL}})."
+        }
+      },
+      "statusSettings": {
+        "comment": {
+         "line1": "Prebacite se na Live Preview ili Reading Mode da vidite tablicu.",
+		"line2": "Ako postoje bilo kakvi Markdown formatirajući znakovi u nazivima statusa, kao što su '*' ili '_',",
+		"line3": "Obsidian možda će ispravno prikazati tablicu samo u Reading Mode-u."
+},
+		"theseAreStatusValues": "Ovo su vrijednosti statusa u odjeljcima Core i Custom statusa.",
+		"title": "Postavke statusa"
+      }
+    }
+  },
+  "settings": {
+    "autoSuggest": {
+      "heading": "Automatski prijedlog",
+      "maxSuggestions": {
+        "description": "Koliko prijedloga treba biti prikazano kada se pojavi izbornik za automatsko predlaženje (uključujući opciju "⏎").",
+		"name": "Maksimalni broj prijedloga za automatsko predlaženje"
+      },
+      "minLength": {
+        "description": "Ako je vrijednost veća od 0, automatsko predlaženje će se aktivirati samo kada se prepozna početak bilo koje podržane ključne riječi.",
+		"name": "Minimalna dužina podudaranja za automatsko predlaženje"
+      },
+      "toggle": {
+        "description": "Ako je omogućeno, otvorit će se pametni izbornik za predloške dok tipkate unutar prepoznatog retka zadatka.",
+		"name": "Automatsko predlaženje sadržaja zadatka"
+      }
+    },
+    "changeRequiresRestart": "Promjena bilo kojih postavki zahtjeva ponovno pokretanje obsidiana.",
+    "dates": {
+      "cancelledDate": {
+        "description": "Ako je omogućeno, dodati će vremensku oznaku ❌ YYYY-MM-DD na kraju kada se zadatak otkaže.",
+		"name": "Postavi datum otkazivanja za svaki otkazani zadatak"
+      },
+      "createdDate": {
+        "description": "Ako je omogućeno, dodati će vremensku oznaku ➕ YYYY-MM-DD ispred ostalih datuma kada se zadatak kreira pomoću 'Kreiraj ili uredi zadatak' ili dovršavanjem ponavljajućeg zadatka.",
+		"name": "Postavi datum kreiranja za svaki dodani zadatak"
+      },
+      "doneDate": {
+        "description": "Ako je omogućeno, dodati će vremensku oznaku ✅ YYYY-MM-DD na kraju kada se zadatak označi kao dovršen.",
+		"name": "Postavi datum dovršetka za svaki završeni zadatak"
+      },
+      "heading": "Datumi"
+    },
+    "datesFromFileNames": {
+      "heading": "Datumi iz naziva datoteka",
+      "scheduledDate": {
+        "extraFormat": {
+          "description": {
+           "line1": "Dodatni format datuma koji će Tasks plugin prepoznati kada koristi naziv datoteke kao Zakazani datum za zadatke bez datuma.",
+		   "line2": "Referenca sintakse"
+          },
+          "name": "Dodatni format datuma u nazivu datoteke kao Zakazani datum za zadatke bez datuma",
+          "placeholder": "primjer: MMM DD YYYY"
+        },
+        "folders": {
+          "description": "Ostavite prazno ako želite koristiti zadane Zakazane datume svugdje, ili unesite zarezom odvojenu listu mapa.",
+		  "name": "Mape sa zadanim Zakazanim datumima"
+        },
+        "toggle": {
+          "description": {
+            "line1": "Uštedite vrijeme pri unosu Zakazanih (⏳) datuma.",
+			"line2": "Ako je ova opcija omogućena, svim zadacima bez datuma bit će dodijeljen zadani Zakazani datum izvučen iz naziva njihove datoteke.",
+			"line3": "Zadano, Tasks plugin će prepoznati i formate datuma <code>YYYY-MM-DD</code> i <code>YYYYMMDD</code>.",
+			"line4": "Zadaci bez datuma nemaju ni Rok (📅), Zakazani (⏳) ni Početni (🛫) datum."
+          },
+          "name": "Koristi naziv datoteke kao Zakazani datum za zadatke bez datuma"
+        }
+      }
+    },
+    "dialogs": {
+      "accessKeys": {
+        "description": "Ako pristupni ključevi (prečaci na tipkovnici) za različite kontrole u dijaloškim okvirima sukobljavaju se sa sistemskim prečacima ili funkcijama asistivne tehnologije koje su vam važne, možete ih deaktivirati ovdje.",
+		"name": "Omogući pristupne ključeve u dijaloškim okvirima"
+      },
+      "heading": "Dialozi"
+    },
+    "format": {
+      "description": {
+        "line1": "Format koji Tasks koristi za čitanje i pisanje zadataka.",
+		"line2": "<b>Važno:</b> Tasks trenutno podržava samo jedan format odjednom. Odabir Dataview formata trenutno će <b>onemogućiti Tasks čitanje vlastitih emoji oznaka</b>."
+      },
+      "displayName": {
+        "dataview": "Dataview",
+        "tasksEmojiFormat": "Zadaci Emoji Format"
+      },
+      "name": "Format zadatka"
+    },
+    "globalFilter": {
+      "filter": {
+        "description": {
+          	"line1": "Preporučeno: Ostavite prazno ako želite da sve stavke s popisa u vašem trezoru budu zadaci kojima upravlja ovaj plugin.",
+			"line2": "Koristite globalni filter ako želite da Tasks djeluje samo na podskup vaših "<code>- [ ]</code>" stavki s popisa, tako da stavka s popisa mora uključivati navedeni niz u svom opisu da bi se smatrala zadatkom.",
+			"line3": "Na primjer, ako postavite globalni filter na <code>#task</code>, Tasks plugin će upravljati samo stavkama s popisa označenim s <code>#task</code>.",
+			"line4": "Ostale stavke s popisa ostat će normalne stavke s popisa i neće se pojavljivati u upitima niti će im biti postavljen datum dovršetka."
+        },
+        "name": "Global filter",
+        "placeholder": "e.g. #task or TODO"
+      },
+      "heading": "Globalni filter zadataka",
+      "removeFilter": {
+        "description": "Ako je omogućeno, uklanja niz koji ste postavili kao globalni filter iz opisa zadatka prilikom prikaza zadatka.",
+		"name": "Ukloni globalni filter iz opisa"
+      }
+    },
+    "globalQuery": {
+      "heading": "Globalni upit",
+      "query": {
+        "description": "Upit koji se automatski uključuje na početku svakog Tasks bloka u trezoru. Korisno za dodavanje zadanih filtera ili opcija izgleda.",
+		"placeholder": "Na primjer...\npath does not include _templates/\nlimit 300\nshow urgency"
+      }
+    },
+    "recurringTasks": {
+      "heading": "Ponavljajući zadaci",
+      "nextLine": {
+        "description": "Ako je omogućeno, sljedeća ponavljajuća verzija zadatka će se pojaviti ispod dovršenog zadatka. Inače će se sljedeća ponavljajuća verzija pojaviti prije dovršene.",
+		"name": "Sljedeća ponavljajuća verzija pojavljuje se ispod"
+      },
+      "removeScheduledDate": {
+        "description": {
+          "line1": "Ako je omogućeno, sljedeća ponavljajuća verzija zadatka neće imati Zakazani (⏳) datum, kada je prisutan barem jedan od Početnih (🛫) ili Rok (📅) datuma.",
+		  "line2": "Ovo je za slučajeve kada želite da se Početni i Rok datumi prenesu na sljedeću ponavljajuću verziju, ali ćete Zakazani datum postaviti kasnije, kada planirate raditi na njemu."
+        },
+        "name": "Ukloni zakazani datum kod ponavljanja"
+      }
+    },
+    "seeTheDocumentation": "Pogledaj dokumentaciju",
+    "statuses": {
+      "collections": {
+        "anuppuccinTheme": "AnuPpuccin Tema",
+        "auraTheme": "Aura Tema",
+        "borderTheme": "Border Tema",
+        "buttons": {
+          "addCollection": {
+            "name": "{{themeName}}: Dodaj {{numberOfStatuses}} podržane Statuse"
+          }
+        },
+        "ebullientworksTheme": "Ebullientworks Tema",
+        "itsThemeAndSlrvbCheckboxes": "ITS tema & SlRvb checkboxovi",
+		"lytModeTheme": "LYT Mode tema (samo tamni način)",
+		"minimalTheme": "Minimalna tema",
+		"thingsTheme": "Things tema"
+      },
+      "coreStatuses": {
+        "buttons": {
+          "checkStatuses": {
+            "name": "Pregledajte i provjerite svoje statuse",
+			"tooltip": "Kreiraj novu datoteku u korijenu trezora koja sadrži Mermaid dijagram trenutnih postavki statusa."
+          }
+        },
+        "description": {
+          "line1": "Ovo su osnovni statusi koje Tasks podržava izvorno, bez potrebe za prilagođenim CSS stilovima ili temama.",
+		  "line2": "Možete uređivati i dodavati vlastite prilagođene statuse u odjeljku ispod."
+        },
+        "heading": "Osnovni Statusi"
+      },
+      "customStatuses": {
+        "buttons": {
+          "addAllUnknown": {
+            "name": "Dodaj sve nepoznate tipove statusa"
+          },
+          "addNewStatus": {
+            "name": "Dodaj novi status zadatka"
+          },
+          "resetCustomStatuses": {
+            "name": "Vrati prilagođene tipove statusa na zadane vrijednosti"
+          }
+        },
+        "description": {
+          "line1": "Prvo trebate <b>odabrati i instalirati CSS snippet ili temu</b> za stiliziranje prilagođenih checkboxova.",
+		"line2": "Zatim koristite gumbe ispod za postavljanje vaših prilagođenih statusa, kako bi odgovarali odabranim CSS checkboxovima.",
+		"line3": "<b>Napomena</b> Svi statusi s istim simbolom kao bilo koji prethodni status bit će zanemareni. Možete potvrditi stvarno učitane statuse pokretanjem naredbe 'Kreiraj ili uredi zadatak' i gledanjem u padajući izbornik Statusa.",
+		"line4": "Pogledajte dokumentaciju za početak!"
+        },
+        "heading": "Prilagođeni statusi"
+      },
+      "heading": "Statusi zadataka"
+    }
+  }
+}
